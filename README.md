@@ -96,30 +96,6 @@ Video processing involves reading frames continuously from the webcam and applyi
 ---
 
 
-# Rotate and display the video
-
-cap = cv2.VideoCapture(0)
-
-for i in range(50):
-    ret, frame = cap.read()
-
-    if not ret:
-        break
-
-    rotated_frame = cv2.rotate(frame, cv2.ROTATE_90_CLOCKWISE)
-
-    frame_rgb = cv2.cvtColor(rotated_frame, cv2.COLOR_BGR2RGB)
-
-    clear_output(wait=True)
-    plt.imshow(frame_rgb)
-    plt.axis('off')
-    plt.show()
-
-    time.sleep(0.05)
-
-cap.release()
-```
-
 ---
 
 # Output
