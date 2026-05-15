@@ -1,7 +1,5 @@
 # opencv-camera-processing
 
-## Ex. No: 02
-
 # Overview
 
 This project demonstrates image capture and video processing using OpenCV in Python. The webcam is used to capture images and process live video frames with different operations such as resizing and rotation.
